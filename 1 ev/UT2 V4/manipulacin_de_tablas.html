@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Manipulación de Tablas | Apuntes_UT2_V1 </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.7 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-32"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Apuntes_UT2_V1</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Portada</a></li>
+   <li class="current-page-parent"><a href="ut_2_diseo_de_bases_de_datos.html" class="current-page-parent daddy">UT 2. Diseño de Bases de Datos</a>
+   <ul>
+      <li><a href="introduccin.html" class="no-ch">Introducción</a></li>
+      <li><a href="fase_1_diseo_conceptual_modelo_entidad_relacin.html" class="daddy">Fase 1. Diseño Conceptual. Modelo Entidad Relación</a>
+      <ul class="other-section">
+         <li><a href="modelo_entidad_relacin_er.html" class="daddy">Modelo Entidad Relación (E/R)</a>
+         <ul class="other-section">
+            <li><a href="entidades.html" class="daddy">Entidades</a>
+            <ul class="other-section">
+               <li><a href="tipos_de_entidades.html" class="no-ch">Tipos de entidades</a></li>
+            </ul>
+            </li>
+            <li><a href="atributos.html" class="daddy">Atributos</a>
+            <ul class="other-section">
+               <li><a href="tipos_de_atributos.html" class="no-ch">Tipos de atributos</a></li>
+            </ul>
+            </li>
+            <li><a href="relaciones.html" class="daddy">Relaciones</a>
+            <ul class="other-section">
+               <li><a href="papel_o_rol.html" class="no-ch">Papel o Rol</a></li>
+               <li><a href="cardinalidad.html" class="no-ch">Cardinalidad</a></li>
+               <li><a href="participacin.html" class="no-ch">Participación</a></li>
+               <li><a href="atributos_propios.html" class="no-ch">Atributos propios</a></li>
+               <li><a href="relaciones_de_dependencia_entidades_fuertes_y_entidades_dbiles.html" class="no-ch">Relaciones de dependencia: Entidades Fuertes y Entidades Débiles</a></li>
+            </ul>
+            </li>
+         </ul>
+         </li>
+         <li><a href="modelo_er_extendido.html" class="daddy">Modelo ER Extendido</a>
+         <ul class="other-section">
+            <li><a href="tipos_de_jerarqua.html" class="no-ch">Tipos de jerarquía</a></li>
+         </ul>
+         </li>
+         <li><a href="ejemplos.html" class="daddy">Ejemplos</a>
+         <ul class="other-section">
+            <li><a href="ejemplo_1.html" class="no-ch">Ejemplo 1</a></li>
+            <li><a href="ejemplo_2.html" class="no-ch">Ejemplo 2</a></li>
+         </ul>
+         </li>
+      </ul>
+      </li>
+      <li><a href="fase_2_diseo_relacional.html" class="daddy">Fase 2. Diseño Relacional</a>
+      <ul class="other-section">
+         <li><a href="ejemplos0.html" class="no-ch">Ejemplos</a></li>
+         <li><a href="opciones_de_actualizacin_y_eliminacin_sobre_claves_ajenas.html" class="no-ch">Opciones de actualización y eliminación sobre claves ajenas.</a></li>
+      </ul>
+      </li>
+      <li><a href="fase_3_normalizacin.html" class="no-ch">Fase 3. Normalización</a></li>
+      <li class="current-page-parent"><a href="fase_4_diseo_fsico.html" class="current-page-parent daddy">Fase 4. Diseño Físico</a>
+      <ul>
+         <li><a href="introduccin0.html" class="no-ch">Introducción</a></li>
+         <li><a href="sql.html" class="no-ch">SQL</a></li>
+         <li><a href="el_lenguaje_ddl_del_sql.html" class="no-ch">El lenguaje DDL del SQL</a></li>
+         <li><a href="tipos_de_datos.html" class="no-ch">Tipos de Datos</a></li>
+         <li><a href="manipulacin_de_esquemasbbdd.html" class="no-ch">Manipulación de Esquemas(BBDD)</a></li>
+         <li id="active"><a href="manipulacin_de_tablas.html" class="active no-ch">Manipulación de Tablas</a></li>
+         <li><a href="restricciones_de_integridad.html" class="no-ch">Restricciones de Integridad</a></li>
+         <li><a href="vistas.html" class="no-ch">Vistas</a></li>
+         <li><a href="ndices.html" class="no-ch">Índices</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="manipulacin_de_esquemasbbdd.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="restricciones_de_integridad.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Manipulación de Tablas</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id27">
+<div class="iDevice emphasis0" >
+<div id="ta27_115_2" class="block iDevice_content">
+<div class="exe-text"><p><img src="img0.20.png" width="689" height="736" alt="tablas1" /></p>
+<p><strong>Un ejemplo de creación de una tabla sería el siguiente:</strong></p>
+<p><img src="img32.png" width="647" height="224" alt="t2" /></p>
+<p>____________________________________________________________________________________________________________</p>
+<p></p>
+<p><img src="img1.15.png" width="947" height="377" alt="restricciones" /></p>
+<p></p>
+<p><span style="color: #ff0000;"><strong>Ejemplo 1: _________________________________________________________________________________________________</strong></span></p>
+<p><img src="img2.16.png" width="880" height="475" alt="ej1" /></p>
+<p></p>
+<p><span style="color: #ff0000;"><strong>Ejemplo 2: _______________________________________________________________________________________________</strong></span></p>
+<p><img src="img3.6.png" width="959" height="738" alt="ej2" /></p>
+<p>_____________________________________________________________________________________________________</p>
+<p></p>
+<p><img src="img4.5.png" width="909" height="346" alt="restricciones" /></p>
+<p></p>
+<p><strong><span style="color: #ff0000;">Ejemplo 3:____________________________________________________________________________________________________</span></strong></p>
+<p><img src="img5.4.png" width="862" height="676" alt="ej3" /></p>
+<p>¿Podríamos borrar la Categoría A de la tabla categoria?</p>
+<p><img src="img7.3.png" width="350" height="43" alt="del2" /></p>
+<p>Obtenemos el siguiente mensaje de parte del sistema:</p>
+<p><img src="img6.4.png" width="1119" height="23" alt="delte" /></p>
+<p></p>
+<p>¿Y la Categoría C?</p>
+<p><img src="img8.2.png" width="363" height="28" alt="del3" /></p>
+<p><img src="img9.2.png" width="635" height="26" alt="del4" /></p>
+<p></p>
+<p>¿Podríamos actualizar la Categoría A de la tabla categoria?</p>
+<p><img src="img10.2.png" width="448" height="38" alt="cat" /></p>
+<p><img src="img11.2.png" width="1119" height="19" alt="cat4" /></p>
+<p></p>
+<p></p>
+<p><span style="color: #ff0000;"><strong>EJEMPLO 4: ______________________________________________________________________________________________________________</strong></span></p>
+<p><img src="img12.2.png" width="886" height="655" alt="EJ7" /></p>
+<p>• ¿Podríamos borrar la Categoría A de la tabla categoria?</p>
+<p>• ¿Qué le ocurre a las piezas que pertenecen la Categoría A después de borrarla?</p>
+<p><img src="img13.2.png" width="627" height="202" alt="c" /></p>
+<p>• ¿Podríamos actualizar la Categoría A de la tabla categoria?<br />• ¿Qué le ocurre a las piezas que pertenecen la Categoría A después de actualizarla?</p>
+<p><img src="img14.2.png" width="631" height="254" alt="c2" /></p>
+<p><span style="color: #ff0000;"><strong>EJEMPLO 5:____________________________________________________________________________________________________________</strong></span></p>
+<p><img src="img15.2.png" width="884" height="663" alt="NULL" /></p>
+<p>• ¿Podríamos borrar la Categoría A de la tabla categoria?<br />• ¿Qué le ocurre a las piezas que pertenecen la Categoría A después de borrarla?</p>
+<p><img src="img16.2.png" width="423" height="222" alt="null2" /></p>
+<p><br />• ¿Podríamos actualizar la Categoría A de la tabla categoria?<br />• ¿Qué le ocurre a las piezas que pertenecen la Categoría A después de actualizarla?</p>
+<p><img src="img17.2.png" width="629" height="244" alt="null3" /></p>
+<p>____________________________________________________________________________________________________________________</p>
+<p></p>
+<p><img src="img18.1.png" width="1000" height="475" alt="opciones" /></p>
+<p><img src="img19.1.png" width="610" height="449" alt="ej" /></p>
+<p>____________________________________________________________________________________________________________________</p>
+<p><img src="img20.1.png" width="995" height="523" alt="elimintar tabla" /></p>
+<p>_______________________________________________________________________________________________________________</p>
+<p><img src="img21.1.png" width="946" height="203" alt="modificar tabla" /></p>
+<p></p>
+<p><img src="img22.png" width="977" height="684" alt="modifi2" /></p>
+<p></p>
+<p><img src="img23.png" width="942" height="517" alt="mo2" /></p>
+<p><img src="img24.png" width="910" height="147" alt="m9" /></p>
+<p></p>
+<p><img src="img25.png" width="717" height="643" alt="m8" /></p>
+<p></p>
+<p><img src="img26.png" width="930" height="182" alt="m4" /></p>
+<p><img src="img27.png" width="694" height="838" alt="m7" /></p>
+<p><img src="img28.png" width="504" height="60" alt="f4" /></p>
+<p><img src="img29.png" width="689" height="560" alt="g5" /></p>
+<p><img src="img30.png" width="730" height="321" alt="d4" /></p>
+<p></p>
+<p><img src="img31.png" width="713" height="209" alt="g6" /></p></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="manipulacin_de_esquemasbbdd.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="restricciones_de_integridad.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<script type="text/javascript" src="_intef_js.js"></script></body></html>

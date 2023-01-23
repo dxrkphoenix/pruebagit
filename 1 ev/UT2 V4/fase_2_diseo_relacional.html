@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Fase 2. Diseño Relacional | Apuntes_UT2_V1 </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.7 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-19"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Apuntes_UT2_V1</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Portada</a></li>
+   <li class="current-page-parent"><a href="ut_2_diseo_de_bases_de_datos.html" class="current-page-parent daddy">UT 2. Diseño de Bases de Datos</a>
+   <ul>
+      <li><a href="introduccin.html" class="no-ch">Introducción</a></li>
+      <li><a href="fase_1_diseo_conceptual_modelo_entidad_relacin.html" class="daddy">Fase 1. Diseño Conceptual. Modelo Entidad Relación</a>
+      <ul class="other-section">
+         <li><a href="modelo_entidad_relacin_er.html" class="daddy">Modelo Entidad Relación (E/R)</a>
+         <ul class="other-section">
+            <li><a href="entidades.html" class="daddy">Entidades</a>
+            <ul class="other-section">
+               <li><a href="tipos_de_entidades.html" class="no-ch">Tipos de entidades</a></li>
+            </ul>
+            </li>
+            <li><a href="atributos.html" class="daddy">Atributos</a>
+            <ul class="other-section">
+               <li><a href="tipos_de_atributos.html" class="no-ch">Tipos de atributos</a></li>
+            </ul>
+            </li>
+            <li><a href="relaciones.html" class="daddy">Relaciones</a>
+            <ul class="other-section">
+               <li><a href="papel_o_rol.html" class="no-ch">Papel o Rol</a></li>
+               <li><a href="cardinalidad.html" class="no-ch">Cardinalidad</a></li>
+               <li><a href="participacin.html" class="no-ch">Participación</a></li>
+               <li><a href="atributos_propios.html" class="no-ch">Atributos propios</a></li>
+               <li><a href="relaciones_de_dependencia_entidades_fuertes_y_entidades_dbiles.html" class="no-ch">Relaciones de dependencia: Entidades Fuertes y Entidades Débiles</a></li>
+            </ul>
+            </li>
+         </ul>
+         </li>
+         <li><a href="modelo_er_extendido.html" class="daddy">Modelo ER Extendido</a>
+         <ul class="other-section">
+            <li><a href="tipos_de_jerarqua.html" class="no-ch">Tipos de jerarquía</a></li>
+         </ul>
+         </li>
+         <li><a href="ejemplos.html" class="daddy">Ejemplos</a>
+         <ul class="other-section">
+            <li><a href="ejemplo_1.html" class="no-ch">Ejemplo 1</a></li>
+            <li><a href="ejemplo_2.html" class="no-ch">Ejemplo 2</a></li>
+         </ul>
+         </li>
+      </ul>
+      </li>
+      <li id="active"><a href="fase_2_diseo_relacional.html" class="active daddy">Fase 2. Diseño Relacional</a>
+      <ul>
+         <li><a href="ejemplos0.html" class="no-ch">Ejemplos</a></li>
+         <li><a href="opciones_de_actualizacin_y_eliminacin_sobre_claves_ajenas.html" class="no-ch">Opciones de actualización y eliminación sobre claves ajenas.</a></li>
+      </ul>
+      </li>
+      <li><a href="fase_3_normalizacin.html" class="no-ch">Fase 3. Normalización</a></li>
+      <li><a href="fase_4_diseo_fsico.html" class="daddy">Fase 4. Diseño Físico</a>
+      <ul class="other-section">
+         <li><a href="introduccin0.html" class="no-ch">Introducción</a></li>
+         <li><a href="sql.html" class="no-ch">SQL</a></li>
+         <li><a href="el_lenguaje_ddl_del_sql.html" class="no-ch">El lenguaje DDL del SQL</a></li>
+         <li><a href="tipos_de_datos.html" class="no-ch">Tipos de Datos</a></li>
+         <li><a href="manipulacin_de_esquemasbbdd.html" class="no-ch">Manipulación de Esquemas(BBDD)</a></li>
+         <li><a href="manipulacin_de_tablas.html" class="no-ch">Manipulación de Tablas</a></li>
+         <li><a href="restricciones_de_integridad.html" class="no-ch">Restricciones de Integridad</a></li>
+         <li><a href="vistas.html" class="no-ch">Vistas</a></li>
+         <li><a href="ndices.html" class="no-ch">Índices</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="ejemplo_2.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="ejemplos0.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Fase 2. Diseño Relacional</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id17">
+<div class="iDevice emphasis0" >
+<div id="ta17_114_2" class="block iDevice_content">
+<div class="exe-text"><p>El <strong>diseño lógico</strong> de una base de datos relacional es un proceso más riguroso y estricto que el diseño conceptual. La realidad del universo del discurso ya ha sido modelada con el modelo de datos E/R, que es la parte del diseño que sin duda más posibilidades y enfoques distintos presenta a la hora de ser abordado.</p>
+<p>De lo que se trata ahora es de convertir el esquema de base de datos que se obtiene en un diseño conceptual en un conjunto de tablas (correctamente denominadas relaciones) relacionadas entre sí.</p>
+<p></p>
+<p><img src="img17.png" width="958" height="234" alt="grafico er mr" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p>Esta transformación se realiza siguiendo una serie de normas, sin que el proceso ofrezca tantas variantes como ocurría en el diseño conceptual. De manera que el diseñador tendrá que tomar menos decisiones creativas y su tarea ahora será más mecánica. Aun así se debe decidir qué hacer por ejemplo con las generalizaciones/especializaciones, lo cual sigue siendo una decisión basada en recomendaciones y en la experiencia, tal y como ocurría en el diseño conceptual. En general, el resto de las transformaciones son más mecánicas, ya que sólo se debe seguir escrupulosamente las reglas que establece el modelo de datos relacional.</p>
+<p></p>
+<p>Existen <strong>tres normas básicas</strong> a seguir a la hora de transformar el esquema conceptual E/RE en un esquema lógico relacional:<br />1.   Toda entidad se convierte en una nueva relación.<br />2.   Toda interrelación donde el tipo de correspondencia es 1:N se transforma realizando lo que se llama "propagación de clave", creándose una clave ajena en la relación de la cardinalidad N.<br />3.   Toda interrelación donde el tipo de correspondencia es N:M se transforma en una nueva tabla intermedia, que tendrá dos claves ajenas que referencian a las relaciones que participaban en forma de entidades en la interrelación.</p>
+<p>Observemos como se cumplen las dos primeras reglas en el siguiente ejemplo:</p>
+<p><img src="img0.12.png" width="1166" height="611" alt="paso a tablas" /></p>
+<p></p>
+<p>Por lo tanto, las reglas básicas de transformación del Modelo Relacional para obtener un esquema lógico a partir de un esquema conceptual vienen reflejadas en la siguiente figura:</p>
+<p><img src="img1.8.png" /></p>
+<p>Vamos a estudiar cada uno de los casos posibles mediante ejemplos :</p>
+<p><img src="img2.10.png" width="1166" height="402" alt="N:M" /></p>
+<p></p>
+<p>En el caso de N:M se crea una nueva tabla, con las claves principales de las entidades relacionadas que a su vez serán claves foráneas o ajenas.</p>
+<p><img src="img3.2.png" width="1166" height="647" alt="ejemplo N:M" /></p>
+<p></p>
+<p></p>
+<p>Veamos ahora el caso de las relaciones de tipo <strong>1:N</strong> -&gt;</p>
+<p><img src="img4.1.png" width="1166" height="426" alt="regla 1:N" /></p>
+<p>Tendremos dos casos,  en función de cuál sea la cardinalidad mínima de la entidad que interviene con cardinalidad 1.</p>
+<p><img src="img5.png" width="1166" height="601" alt="caso 1 de 1:N" /></p>
+<p>Veamos un ejemplo de esta caso:</p>
+<p><img src="img6.png" width="1166" height="597" alt="ejemplo caso 1 de tipo 1:N" /></p>
+<p></p>
+<p>El segundo caso que podemos tener de esta tipo es cuando la cardinalidad mínima de la entidad que actúa con 1 es cero. En esta caso crearemos una nueva relación -&gt;</p>
+<p><img src="img7.png" width="1166" height="560" alt="minima 0" /></p>
+<p></p>
+<p>En nuestro ejemplo quedaría de la siguiente manera:</p>
+<p><img src="img8.png" width="1166" height="644" alt="caso de tipo 1:N" /></p>
+<p></p>
+<p>Veamos ahora las transformaciones de relaciones de tipo 1:1  En este apartado nos podemos encontrar con 3 posibilidades:</p>
+<ul>
+<li>(1,1)  (1,1)</li>
+<li>(1,1) (0,1)</li>
+<li>(0,1) (0,1)</li>
+</ul>
+<p></p>
+<p>El primer caso sería el (1,1) (1,1). Aquí debemos propagar la clave en un sentido o en otro, da igual el escogido.</p>
+<p><img src="img9.png" width="1166" height="629" alt="caso 11 11" /></p>
+<p>En segundo lugar tendremos el caso (1,1) (0,1) donde debemos tener siempre en cuenta que no debemos propagar nulos de un lado al otro, por lo tanto siempre se propagará la clave del lado del (1,1)</p>
+<p><img src="img10.png" width="1166" height="629" alt="caso dos 11" /></p>
+<p></p>
+<p>Por último, tendríamos el caso (0,1) y (0,1). Aquí se genera una nueva relación (dos posiblidades):</p>
+<p><img src="img11.png" width="1166" height="671" alt="01 01" /></p>
+<p></p>
+<p>Quedaría de la siguiente manera: (como vemos hay dos posibilidades al crear la nueva relación)</p>
+<p><img src="img12.png" width="1166" height="580" alt="01 01 resultado" /></p>
+<p>Veamos un ejemplo de cardinalidad (0,1) a (0,1) en una relación reflexiva:</p>
+<p><img src="img13.png" width="1166" height="675" alt="11 reflexiva" /></p>
+<p></p>
+<p>Estudiemos ahora cómo sería la transformación en el caso de las <strong>entidades débiles: </strong>en este caso la entidad débil necesita la clave de la entidad fuerte que junto con su identificador será la clave primaria. Además la parte de la clave que pertenece a la entidad fuerte será clave ajena.</p>
+<p><strong><img src="img14.png" width="1166" height="492" alt="entidades debiles" /></strong></p>
+<p><strong></strong></p>
+<p>Por últimos nos queda estudiar las Generalizaciones/Especializaciones (también llamadas jerarquías). Existen 3 métodos para estos casos:</p>
+<ul>
+<li><strong>Colapsar -&gt;</strong> consiste en transformar la generalización/especialización en una única tabla con todos los atributos del supertipo y de los subtipos. Esta solución es recomendable si los subtipos no tienen apenas atributos propios y sobre todo si los subtipos no participan en interrelaciones, sino que sólo participa el supertipo. Los atributos de los subtipos deberían poder contener valores nulos.</li>
+<li><strong>Estallar -&gt;</strong> consiste en crear una tabla por cada subtipo y otra por el supertipo. Las tablas creadas de los subtipos contendrán una clave ajena que referencie a la tabla del supertipo. Es la opción más usada.</li>
+<li><strong>Especializar -&gt;</strong> consiste en hacer desaparecer al supertipo, de manera que los subtipos heredarían los atributos del supertipo. Esta solución suele ser recomendable siempre que el supertipo no participe en interrelaciones, aunque también podría utilizarse en ese caso.</li>
+</ul>
+<p><img src="img15.png" width="1166" height="630" alt="jerarquia" /></p>
+<p></p>
+<p><img src="img16.png" width="1166" height="542" alt="relaciones ternarias" /></p>
+<p></p>
+<p></p>
+<p><strong></strong></p>
+<p></p></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="ejemplo_2.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="ejemplos0.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<script type="text/javascript" src="_intef_js.js"></script></body></html>

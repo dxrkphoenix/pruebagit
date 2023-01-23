@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>SQL | Apuntes_UT2_V1 </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.7 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-28"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Apuntes_UT2_V1</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Portada</a></li>
+   <li class="current-page-parent"><a href="ut_2_diseo_de_bases_de_datos.html" class="current-page-parent daddy">UT 2. Diseño de Bases de Datos</a>
+   <ul>
+      <li><a href="introduccin.html" class="no-ch">Introducción</a></li>
+      <li><a href="fase_1_diseo_conceptual_modelo_entidad_relacin.html" class="daddy">Fase 1. Diseño Conceptual. Modelo Entidad Relación</a>
+      <ul class="other-section">
+         <li><a href="modelo_entidad_relacin_er.html" class="daddy">Modelo Entidad Relación (E/R)</a>
+         <ul class="other-section">
+            <li><a href="entidades.html" class="daddy">Entidades</a>
+            <ul class="other-section">
+               <li><a href="tipos_de_entidades.html" class="no-ch">Tipos de entidades</a></li>
+            </ul>
+            </li>
+            <li><a href="atributos.html" class="daddy">Atributos</a>
+            <ul class="other-section">
+               <li><a href="tipos_de_atributos.html" class="no-ch">Tipos de atributos</a></li>
+            </ul>
+            </li>
+            <li><a href="relaciones.html" class="daddy">Relaciones</a>
+            <ul class="other-section">
+               <li><a href="papel_o_rol.html" class="no-ch">Papel o Rol</a></li>
+               <li><a href="cardinalidad.html" class="no-ch">Cardinalidad</a></li>
+               <li><a href="participacin.html" class="no-ch">Participación</a></li>
+               <li><a href="atributos_propios.html" class="no-ch">Atributos propios</a></li>
+               <li><a href="relaciones_de_dependencia_entidades_fuertes_y_entidades_dbiles.html" class="no-ch">Relaciones de dependencia: Entidades Fuertes y Entidades Débiles</a></li>
+            </ul>
+            </li>
+         </ul>
+         </li>
+         <li><a href="modelo_er_extendido.html" class="daddy">Modelo ER Extendido</a>
+         <ul class="other-section">
+            <li><a href="tipos_de_jerarqua.html" class="no-ch">Tipos de jerarquía</a></li>
+         </ul>
+         </li>
+         <li><a href="ejemplos.html" class="daddy">Ejemplos</a>
+         <ul class="other-section">
+            <li><a href="ejemplo_1.html" class="no-ch">Ejemplo 1</a></li>
+            <li><a href="ejemplo_2.html" class="no-ch">Ejemplo 2</a></li>
+         </ul>
+         </li>
+      </ul>
+      </li>
+      <li><a href="fase_2_diseo_relacional.html" class="daddy">Fase 2. Diseño Relacional</a>
+      <ul class="other-section">
+         <li><a href="ejemplos0.html" class="no-ch">Ejemplos</a></li>
+         <li><a href="opciones_de_actualizacin_y_eliminacin_sobre_claves_ajenas.html" class="no-ch">Opciones de actualización y eliminación sobre claves ajenas.</a></li>
+      </ul>
+      </li>
+      <li><a href="fase_3_normalizacin.html" class="no-ch">Fase 3. Normalización</a></li>
+      <li class="current-page-parent"><a href="fase_4_diseo_fsico.html" class="current-page-parent daddy">Fase 4. Diseño Físico</a>
+      <ul>
+         <li><a href="introduccin0.html" class="no-ch">Introducción</a></li>
+         <li id="active"><a href="sql.html" class="active no-ch">SQL</a></li>
+         <li><a href="el_lenguaje_ddl_del_sql.html" class="no-ch">El lenguaje DDL del SQL</a></li>
+         <li><a href="tipos_de_datos.html" class="no-ch">Tipos de Datos</a></li>
+         <li><a href="manipulacin_de_esquemasbbdd.html" class="no-ch">Manipulación de Esquemas(BBDD)</a></li>
+         <li><a href="manipulacin_de_tablas.html" class="no-ch">Manipulación de Tablas</a></li>
+         <li><a href="restricciones_de_integridad.html" class="no-ch">Restricciones de Integridad</a></li>
+         <li><a href="vistas.html" class="no-ch">Vistas</a></li>
+         <li><a href="ndices.html" class="no-ch">Índices</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="introduccin0.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="el_lenguaje_ddl_del_sql.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">SQL</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id23">
+<div class="iDevice emphasis0" >
+<div id="ta23_117_2" class="block iDevice_content">
+<div class="exe-text"><p><strong>LENGUAJE ESTRUCTUCTURADO DE CONSULTAS (SQL)</strong></p>
+<p>El lenguaje de consulta estructurado o SQL (por sus siglas en inglés Structured Query Language) es un lenguaje declarativo de acceso a bases de datos relacionales.</p>
+<p>Una de sus características es el manejo del álgebra y el cálculo relacional que permiten efectuar consultas con el fin de recuperar información de interés de bases de datos, así como hacer cambios en ella.</p>
+<p>SQL es un lenguaje de acceso a bases de datos que explota la flexibilidad y potencia de los sistemas relacionales y permite así gran variedad de operaciones. Es un lenguaje declarativo de alto nivel y no procedimental que, gracias a su fuerte base teórica y su orientación al manejo de conjuntos de registros (y no a registros individuales) permite una alta productividad en codificación y la orientación a objetos.</p>
+<p><img src="img1.12.png" width="452" height="389" alt="productos" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p></p>
+<p>SQL también tiene las siguientes características generales:</p>
+<ul>
+<li><strong>Lenguaje de definición o descripción de datos (DDL o LDD):</strong> El DDL de SQL proporciona comandos para la definición de esquemas de relación, borrado de relaciones y modificaciones de los esquemas de relación.</li>
+<li><strong>Lenguaje interactivo de manipulación de datos (DML o LMD):</strong> El LMD de SQL incluye lenguajes de consultas basado tanto en álgebra relacional como en cálculo relacional de tuplas.</li>
+<li><strong>Integridad:</strong> El LDD de SQL incluye comandos para especificar las restricciones de integridad que deben cumplir los datos almacenados en la base de datos.</li>
+<li><strong>Definición de vistas:</strong> El LDD incluye comandos para definir las vistas.</li>
+<li><strong>Control de transacciones</strong>: SQL tiene comandos para especificar el comienzo y el final de una transacción.</li>
+<li><strong>SQL incorporado y dinámico:</strong> Esto quiere decir que se pueden incorporar instrucciones de SQL en lenguajes de programación como: C++, C, Java, PHP, Cobol, Pascal y Fortran.</li>
+<li><strong>Autorización:</strong> El LDD incluye comandos para especificar los derechos de acceso a las relaciones y a las vistas.</li>
+</ul>
+<p>En 1986, el ANSI adoptó SQL (sustancialmente adoptó el dialecto SQL de IBM) como estándar para los lenguajes relacionales y en 1987 se transformó en estándar ISO. Esta versión del estándar se denomina SQL/86. En los años siguientes, el estándar ha sufrido diversas revisiones que se resumen en la tabla siguiente:</p>
+<p><img src="img0.16.png" width="1029" height="471" alt="versines sql" /></p>
+<p>El hecho de tener un estándar definido por un lenguaje para bases de datos relacionales abre potencialmente el camino a la interoperabilidad entre todos los productos que se basan en ese estándar.</p>
+<p>Desde el punto de vista práctico, por desgracia las cosas fueron de otro modo. Efectivamente, en general cada productor adopta e implementa en la propia base de datos sólo el corazón del lenguaje SQL (llamado "Entry level"), extendiéndolo de manera individual según la propia visión que cada cual tenga del mundo de las bases de datos. En esta unidad estudiaremos la implementación del lenguaje SQL que hace el SGBD MySQL, que coincide en gran medida con otras implementaciones de otros desarrolladores de software.</p></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="introduccin0.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="el_lenguaje_ddl_del_sql.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<script type="text/javascript" src="_intef_js.js"></script></body></html>

@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Restricciones de Integridad | Apuntes_UT2_V1 </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.7 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-33"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Apuntes_UT2_V1</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Portada</a></li>
+   <li class="current-page-parent"><a href="ut_2_diseo_de_bases_de_datos.html" class="current-page-parent daddy">UT 2. Diseño de Bases de Datos</a>
+   <ul>
+      <li><a href="introduccin.html" class="no-ch">Introducción</a></li>
+      <li><a href="fase_1_diseo_conceptual_modelo_entidad_relacin.html" class="daddy">Fase 1. Diseño Conceptual. Modelo Entidad Relación</a>
+      <ul class="other-section">
+         <li><a href="modelo_entidad_relacin_er.html" class="daddy">Modelo Entidad Relación (E/R)</a>
+         <ul class="other-section">
+            <li><a href="entidades.html" class="daddy">Entidades</a>
+            <ul class="other-section">
+               <li><a href="tipos_de_entidades.html" class="no-ch">Tipos de entidades</a></li>
+            </ul>
+            </li>
+            <li><a href="atributos.html" class="daddy">Atributos</a>
+            <ul class="other-section">
+               <li><a href="tipos_de_atributos.html" class="no-ch">Tipos de atributos</a></li>
+            </ul>
+            </li>
+            <li><a href="relaciones.html" class="daddy">Relaciones</a>
+            <ul class="other-section">
+               <li><a href="papel_o_rol.html" class="no-ch">Papel o Rol</a></li>
+               <li><a href="cardinalidad.html" class="no-ch">Cardinalidad</a></li>
+               <li><a href="participacin.html" class="no-ch">Participación</a></li>
+               <li><a href="atributos_propios.html" class="no-ch">Atributos propios</a></li>
+               <li><a href="relaciones_de_dependencia_entidades_fuertes_y_entidades_dbiles.html" class="no-ch">Relaciones de dependencia: Entidades Fuertes y Entidades Débiles</a></li>
+            </ul>
+            </li>
+         </ul>
+         </li>
+         <li><a href="modelo_er_extendido.html" class="daddy">Modelo ER Extendido</a>
+         <ul class="other-section">
+            <li><a href="tipos_de_jerarqua.html" class="no-ch">Tipos de jerarquía</a></li>
+         </ul>
+         </li>
+         <li><a href="ejemplos.html" class="daddy">Ejemplos</a>
+         <ul class="other-section">
+            <li><a href="ejemplo_1.html" class="no-ch">Ejemplo 1</a></li>
+            <li><a href="ejemplo_2.html" class="no-ch">Ejemplo 2</a></li>
+         </ul>
+         </li>
+      </ul>
+      </li>
+      <li><a href="fase_2_diseo_relacional.html" class="daddy">Fase 2. Diseño Relacional</a>
+      <ul class="other-section">
+         <li><a href="ejemplos0.html" class="no-ch">Ejemplos</a></li>
+         <li><a href="opciones_de_actualizacin_y_eliminacin_sobre_claves_ajenas.html" class="no-ch">Opciones de actualización y eliminación sobre claves ajenas.</a></li>
+      </ul>
+      </li>
+      <li><a href="fase_3_normalizacin.html" class="no-ch">Fase 3. Normalización</a></li>
+      <li class="current-page-parent"><a href="fase_4_diseo_fsico.html" class="current-page-parent daddy">Fase 4. Diseño Físico</a>
+      <ul>
+         <li><a href="introduccin0.html" class="no-ch">Introducción</a></li>
+         <li><a href="sql.html" class="no-ch">SQL</a></li>
+         <li><a href="el_lenguaje_ddl_del_sql.html" class="no-ch">El lenguaje DDL del SQL</a></li>
+         <li><a href="tipos_de_datos.html" class="no-ch">Tipos de Datos</a></li>
+         <li><a href="manipulacin_de_esquemasbbdd.html" class="no-ch">Manipulación de Esquemas(BBDD)</a></li>
+         <li><a href="manipulacin_de_tablas.html" class="no-ch">Manipulación de Tablas</a></li>
+         <li id="active"><a href="restricciones_de_integridad.html" class="active no-ch">Restricciones de Integridad</a></li>
+         <li><a href="vistas.html" class="no-ch">Vistas</a></li>
+         <li><a href="ndices.html" class="no-ch">Índices</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="manipulacin_de_tablas.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="vistas.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Restricciones de Integridad</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id28">
+<div class="iDevice emphasis0" >
+<div id="ta28_116_2" class="block iDevice_content">
+<div class="exe-text"><p>En este apartado se van a estudiar de forma detallada todas las posibilidades que ofrece el DDL de MySQL en cuanto a la definición de restricciones de integridad:</p>
+<ul>
+<li>restricciones de obligatoriedad</li>
+<li>restricciones de clave primaria</li>
+<li>clave alternativa</li>
+<li>clave ajena, así como las opciones de eliminación y actualización.</li>
+</ul>
+<p></p>
+<p><span style="font-size: 18pt;"><strong>Restricción de obligatoriedad</strong></span><br />La primera restricción que vamos a estudiar es la restricción de obligatoriedad (‘NOT NULL’) que establece que un atributo debe contener obligatoriamente un valor y que por tanto no puede aceptar nulos (‘NULL’). Esta restricción se indicará dentro de la orden ‘CREATE TABLE’, tal y como se muestra en el siguiente cuadro de código:</p>
+<p><img src="img0.21.png" width="1040" height="162" alt="t" /></p>
+<p><img src="img1.16.png" width="757" height="702" alt="f4" /></p>
+<p><img src="img2.17.png" width="1048" height="318" alt="explicacion" /></p>
+<p><img src="img3.7.png" width="1090" height="746" alt="int" /></p>
+<p></p>
+<p>A continuación se realizará la misma prueba, pero esta vez para atributos de tipo fecha (‘DATE’), a partir del código que se muestra en el siguiente cuadro de código:</p>
+<p><img src="img5.5.png" width="710" height="795" alt="DATE" /></p>
+<p>El dominio ‘DATE’ es un tipo especial de cadena de caracteres, formado por una cadena con el formato ‘aaaa-mm-dd’. Cuando se realiza una inserción, si no se respeta este formato o si el sistema detecta que no se ha insertado valor alguno en un atributo obligatorio, se insertará el valor ‘0000-00-00’, como puede verse en la imagen siguiente:</p>
+<p><img src="img21.3.png" width="751" height="831" alt="t3" /></p>
+<p>Algo similar ocurrirá en el caso de atributos del tipo hora (‘TIME’), que son también un tipo especial de cadenas de caracteres que tienen el formato ‘hh:mm:ss’. En el siguiente cuadro de código en la página siguiente se muestra la creación de una tabla con un atributo obligatorio y otro opcional, ambos del tipo ‘TIME’:</p>
+<p><img src="img6.5.png" width="680" height="176" alt="TIME" /></p>
+<p><img src="img7.4.png" width="787" height="847" alt="TIME 2" /></p>
+<p></p>
+<p>Para atributos que contienen números reales, el sistema insertará el valor 0.00 (para un atributo ‘NUMERIC(10,2)’). En el siguiente cuadro de código se muestra la creación de una tabla con atributos reales:</p>
+<p><img src="img8.3.png" width="691" height="843" alt="REAL" /></p>
+<p></p>
+<p><span style="font-size: 18pt;"><strong>Restricción de clave primaria</strong></span></p>
+<p><span style="font-size: 12pt;">La restricción de clave primaria se realiza mediante la cláusula ‘PRIMARY KEY’ dentro de la orden ‘CREATE TABLE’ o bien dentro de la orden ‘ALTER TABLE’. Las claves primarias pueden ser simples (formadas por un solo atributo) o compuestas formadas por más de un atributo. Si la clave primaria es simple puede declararse en la misma línea donde se define el atributo, o bien debajo de la definición antes de cerrar la orden ‘CREATE TABLE’, tal y como mostramos en la siguiente tabla:</span></p>
+<p><span style="font-size: 12pt;"><img src="img9.3.png" width="1048" height="564" alt="PK" /></span></p>
+<p><img src="img10.3.png" width="1051" height="653" alt="DROP PK" /></p>
+<p></p>
+<p><img src="img11.3.png" width="1056" height="645" alt="PP" /></p>
+<p></p>
+<p><span style="font-size: 18pt;"><strong>Restricción de clave alternativa</strong></span></p>
+<p><span style="font-size: 12pt;">La restricción de clave alternativa representa un mecanismo de direccionamiento secundario o alternativo a nivel de tuplas en un sistema de bases de datos relacional. MySQL permite la definición de claves alternativas mediante la cláusula ‘UNIQUE’ dentro de la orden ‘CREATE TABLE’, tal y como se muestra en el cuadro de código siguiente:</span></p>
+<p><span style="font-size: 12pt;"><img src="img12.3.png" width="1048" height="273" alt="OI" /></span></p>
+<p><span style="font-size: 12pt;">En la tabla anterior se muestra el código SQL que permite crear una tabla que tiene una clave primaria y cuatro claves alternativas. Obsérvese que a diferencia de las claves primarias que siempre son ‘NOT NULL’ por la regla de integridad de las entidades del modelo relacional que establece que ningún componente de clave primaria puede contener valores nulos,<strong> las claves alternativas sí pueden contener valores nulos.</strong></span></p>
+<p><span style="font-size: 12pt;">Otra diferencia obvia que establece el modelo relacional es que una tabla puede tener cero o más claves alternativas y una y obligatoriamente solo una clave primaria. Como se observa en el código anterior, la definición de las claves alternativas se puede hacer a la derecha de la definición del atributo o debajo.</span></p>
+<p><span style="font-size: 12pt;"> Otra diferencia con respecto a las claves primarias, <strong>es que no se puede definir una clave alternativa compuesta. </strong></span></p>
+<p><span style="font-size: 12pt;">Hay que evitar crear demasiadas claves alternativas sobre todo si no son de tipos enteros, ya que el sistema las implementas como índices, por lo que en la inserción, eliminación o actualización de datos, debe chequear la tabla completamente para comprobar que no se repite el valor, lo que puede provocar que estas operaciones requieran mucho tiempo.</span></p>
+<p><span style="font-size: 12pt;">Una forma de eliminar una clave alternativa es mediante la orden <strong>‘ALTER TABLE tbl_name DROP INDEX index_name’,</strong> pero únicamente funcionará si la clave alternativa ha sido descrita debajo de la definición de los atributos y tiene un nombre. En la siguiente imagen se muestra la ejecución de la esta orden y se muestra el diseño de la tabla obtenido mediante el comando ‘DESCRIBE’:</span></p>
+<p><span style="font-size: 12pt;"><img src="img13.3.png" width="1043" height="486" alt="drop index" /></span></p>
+<p><span style="font-size: 12pt;"></span></p>
+<p><span style="font-size: 18pt;"><strong>Restricción de clave ajena</strong></span></p>
+<p><span style="font-size: 12pt;">La restricción de clave ajena o clave foránea representa el mecanismo de integridad referencial que asegura la consistencia de las bases de datos relacionales. Como se dijo anteriormente, para que el sistema MySQL exija que se cumpla la integridad referencial al insertar un valor para un atributo clave ajena, las tablas deben ser creadas con el motor (‘ENGINE’) “InnoDB”.</span></p>
+<p><span style="font-size: 12pt;"> La cláusula ‘FOREIGN KEY’ que se incluye dentro de la orden ‘CREATE TABLE’ permite especificar las claves ajenas. Esta cláusula se completa con las opción ‘REFERENCES’ que establece el atributo (recomendablemente clave primaria) de la tabla a la que hace referencia (relación referida). También se completa con las opciones de actualización y eliminación para claves ajenas.</span></p>
+<p><span style="font-size: 12pt;">En el siguiente cuadro de código, se crea una tabla denominada ‘NOMINAS’ que contiene una clave ajena que referencia a la tabla ‘TRABAJADORES’ creada anteriormente. En este ejemplo no se incluye ninguna opción para establecer el comportamiento en caso de actualización o eliminación del atributo al que hace referencia:</span></p>
+<p><span style="font-size: 12pt;"><img src="img14.3.png" width="1034" height="262" alt="ajenas" /></span></p>
+<p><span style="font-size: 12pt;"><img src="img15.3.png" width="1028" height="397" alt="ajenas2" /></span></p>
+<p><span style="font-size: 12pt;"><img src="img16.3.png" width="1042" height="589" alt="ajenas3" /></span></p>
+<p><span style="font-size: 12pt;"></span></p>
+<p><span style="font-size: 12pt;">Todas las restricciones (clave primaria, clave alternativa y clave ajena) de todas las tablas de todas las bases de datos se almacenan en una tabla de sistema denominada ‘<strong>TABLE_CONSTRAINTS</strong>’ que se encuentra en la base de datos<strong> ‘INFORMATION_SCHEMA’.</strong> </span></p>
+<p><span style="font-size: 12pt;">En la siguiente imagen se muestra el diseño de esta tabla obtenido mediante el comando ‘DESCRIBE INFORMATION_SCHEMA.TABLE_CONSTRAINTS’:</span></p>
+<p><span style="font-size: 12pt;"><img src="img17.3.png" width="1035" height="306" alt="information_schema" /></span></p>
+<p><span style="font-size: 12pt;"></span></p>
+<p><span style="font-size: 18pt;"><strong>Reglas para claves ajenas</strong></span></p>
+<p><span style="font-size: 12pt;">La restricción de clave ajena se completa mediante la especificación del comportamiento del sistema cuando el atributo al que hace referencia una clave ajena ha sido modificado o eliminado. </span></p>
+<p><span style="font-size: 12pt;">Las reglas para claves ajenas que permite de manera estándar el lenguaje SQL son las siguientes:</span></p>
+<p style="padding-left: 30px;"><span style="font-size: 12pt;">1. Sin acción (‘ON UPDATE / ON DELETE NO ACTION’).<br />2. En cascada (‘ON UPDATE / ON DELETE CASCADE’).<br />3. Relleno con nulos (‘ON UPDATE / ON DELETE SET NULL’).<br />4. Relleno con valor por defecto (‘ON UPDATE / ON DELETE SET DEFAULT’). “InnoDB” rechaza definiciones de tablas que contengan esta opción.<br />5. Con restricciones (‘ON UPDATE / ON DELETE RESTRICT’).</span></p>
+<p><span style="font-size: 12pt;">La primera opción (‘NO ACTION’) puede considerarse la opción menos peligrosa y suele ser empleada frecuentemente en las eliminaciones.</span></p>
+<p><span style="font-size: 12pt;"> La segunda opción (‘CASCADE’) es la opción más elegida en las actualizaciones, pero puede ser peligrosa en las eliminaciones. </span></p>
+<p><span style="font-size: 12pt;">Mediante la opción ‘NO ACTION’, si se desde actualizar o eliminar una fila de una tabla que contiene un atributo que es referenciado por la clave ajena de otra tabla, el sistema no lo permitirá y mostrará un mensaje de error, para que el usuario de la base de datos actualice o elimine manualmente los registros relacionados y después pueda ejecutar la acción de actualización o de eliminación.</span></p>
+<p><span style="font-size: 12pt;"> Mediante la opción ‘CASCADE’, si se desea actualizar o eliminar una fila de una tabla que contiene un atributo que es referenciado por la clave ajena de otra tabla, el sistema propaga la actualización o eliminación. </span></p>
+<p><span style="font-size: 12pt;">En el siguiente cuadro de código se muestra la creación de dos tablas que están relacionadas mediante una clave ajena que se ha definido con la opción ‘ON UPDATE CASCADE ON DELETE NO ACTION’, que suele ser la combinación más frecuente:</span></p>
+<p><span style="font-size: 12pt;"><img src="img18.2.png" width="1043" height="412" alt="cascade" /></span></p>
+<p><span style="font-size: 12pt;"></span></p>
+<p><span style="font-size: 12pt;"><strong>El orden de creación de las tablas es relevante</strong>. Primero debe crearse la relación referida (la que está siendo referenciada y no tiene clave ajena alguna) y a continuación se debe crear la relación referencial (la que contiene la clave ajena). </span></p>
+<p><span style="font-size: 12pt;">Si la creación se hiciese en otro orden, el sistema fallaría en la creación de la tabla que contiene la clave ajena.</span></p>
+<p><span style="font-size: 12pt;"> En caso de borrado de las tablas, deberían hacerse en el orden inverso, primero la tabla que contiene la clave ajena y después la que es referenciada.</span></p>
+<p><span style="font-size: 12pt;">Veamos unos ejemplos.</span></p>
+<p><span style="font-size: 12pt;"><img src="img19.2.png" width="1033" height="478" alt="referenciada" /></span></p>
+<p><span style="font-size: 12pt;">Se hace necesario insertar primero el artista y después se podrán insertar los discos de ese determinado artista.</span></p>
+<p><span style="font-size: 12pt;">La tercera opción de reglas para claves ajenas (‘SET NULL’) tendrá sentido si el atributo clave ajena permite valores nulos, tal y como se muestra en el siguiente cuadro de código:</span></p>
+<p><span style="font-size: 12pt;"><img src="img20.2.png" width="1028" height="231" alt="set null" /></span></p>
+<p><span style="font-size: 12pt;"></span></p>
+<p><span style="font-size: 12pt;">Del mismo modo, la cuarta opción<strong> (‘SET DEFAULT’)</strong> tendrá sentido si el atributo clave ajena ha sido definido con un valor por defecto. En el siguiente cuadro de código se muestra la creación de una tabla que implementa la regla ‘SET DEFAULT’ para la clave ajena:</span></p>
+<p><span style="font-size: 12pt;"><img src="img21.2.png" width="1036" height="232" alt="def2" /></span></p>
+<p><span style="font-size: 12pt;">Obsérvese que en la creación la tabla en la que la clave ajena tiene la regla ‘SET NULL’ se ha empleado el motor “InnoDB”; en cambio en la creación de la tabla que contiene la clave ajena ‘SET DEFAULT’ ha sido empleado el motor “MyISAM”. <strong>Esto se debe a que el motor “InnoDB” rechaza definiciones de tablas que contengan ‘ON DELETE SET DEFAULT’ y ‘ON UPDATE SET DEFAULT’.</strong></span><span style="font-size: 12pt;"><strong></strong></span></p>
+<p><span style="font-size: 12pt;">Por otro lado, sabemos que el motor de almacenamiento “MyISAM”,no implementa las restricciones de integridad referencial.</span></p>
+<p><span style="font-size: 12pt;">Por tanto nos encontramos con que MySQL permite definir la regla para claves ajenas <strong>‘SET DEFAULT’</strong> en tablas con motor de almacenamiento distinto a “InnoDB”, pero luego no implementa la acción de relleno con valor por defecto, por lo que<strong> está posibilidad no es operativa en este sistema gestor de bases de datos.</strong></span></p>
+<p><span style="font-size: 12pt;"><strong>Resumiendo,</strong> con el motor de almacenamiento InnoDB podremos implementar la integridad referencial junto al tipo de restricción SET NULL pero no lo permite junto al tipo de restricción SET DEFAULT.</span></p>
+<p><span style="font-size: 12pt;">El motor MyISAM” permite establecer la restricción SET DEFAULT, pero luego no permite la integridad referencial por lo que finalmente tampoco permite implementar la restricción de SET DEFAULT.</span></p>
+<p><span style="font-size: 12pt;">Por tanto, vemos que finalmente con ninguno de los dos motores podemos implementar la restricción de SET DEFAULT en este sistema gestor de base de datos.</span></p>
+<p><span style="font-size: 12pt;">La quinta opción de reglas para claves ajenas se trata de <strong>‘UPDATE/DELETE RESTRICT’</strong>, que puede traducirse como actualización o eliminación con restricciones. Al igual que ocurría con ‘NO ACTION’, ‘RESTRICT’ rechaza la operación de eliminación o actualización en la tabla referida. Algunos sistemas gestores de bases de datos tienen verificaciones diferidas o retrasadas, una de las cuales es, pero en MySQL no, es decir, las restricciones de claves foráneas se verifican inmediatamente.<strong> Por eso, ‘NO ACTION’ y ‘RESTRICT’ son equivalentes.</strong></span></p>
+<p><span style="font-size: 12pt;"><strong></strong></span></p>
+<p><span style="font-size: 12pt;"></span></p></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="manipulacin_de_tablas.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="vistas.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<script type="text/javascript" src="_intef_js.js"></script></body></html>

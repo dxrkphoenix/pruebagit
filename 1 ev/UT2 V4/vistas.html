@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Vistas | Apuntes_UT2_V1 </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.7 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-34"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Apuntes_UT2_V1</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Portada</a></li>
+   <li class="current-page-parent"><a href="ut_2_diseo_de_bases_de_datos.html" class="current-page-parent daddy">UT 2. Diseño de Bases de Datos</a>
+   <ul>
+      <li><a href="introduccin.html" class="no-ch">Introducción</a></li>
+      <li><a href="fase_1_diseo_conceptual_modelo_entidad_relacin.html" class="daddy">Fase 1. Diseño Conceptual. Modelo Entidad Relación</a>
+      <ul class="other-section">
+         <li><a href="modelo_entidad_relacin_er.html" class="daddy">Modelo Entidad Relación (E/R)</a>
+         <ul class="other-section">
+            <li><a href="entidades.html" class="daddy">Entidades</a>
+            <ul class="other-section">
+               <li><a href="tipos_de_entidades.html" class="no-ch">Tipos de entidades</a></li>
+            </ul>
+            </li>
+            <li><a href="atributos.html" class="daddy">Atributos</a>
+            <ul class="other-section">
+               <li><a href="tipos_de_atributos.html" class="no-ch">Tipos de atributos</a></li>
+            </ul>
+            </li>
+            <li><a href="relaciones.html" class="daddy">Relaciones</a>
+            <ul class="other-section">
+               <li><a href="papel_o_rol.html" class="no-ch">Papel o Rol</a></li>
+               <li><a href="cardinalidad.html" class="no-ch">Cardinalidad</a></li>
+               <li><a href="participacin.html" class="no-ch">Participación</a></li>
+               <li><a href="atributos_propios.html" class="no-ch">Atributos propios</a></li>
+               <li><a href="relaciones_de_dependencia_entidades_fuertes_y_entidades_dbiles.html" class="no-ch">Relaciones de dependencia: Entidades Fuertes y Entidades Débiles</a></li>
+            </ul>
+            </li>
+         </ul>
+         </li>
+         <li><a href="modelo_er_extendido.html" class="daddy">Modelo ER Extendido</a>
+         <ul class="other-section">
+            <li><a href="tipos_de_jerarqua.html" class="no-ch">Tipos de jerarquía</a></li>
+         </ul>
+         </li>
+         <li><a href="ejemplos.html" class="daddy">Ejemplos</a>
+         <ul class="other-section">
+            <li><a href="ejemplo_1.html" class="no-ch">Ejemplo 1</a></li>
+            <li><a href="ejemplo_2.html" class="no-ch">Ejemplo 2</a></li>
+         </ul>
+         </li>
+      </ul>
+      </li>
+      <li><a href="fase_2_diseo_relacional.html" class="daddy">Fase 2. Diseño Relacional</a>
+      <ul class="other-section">
+         <li><a href="ejemplos0.html" class="no-ch">Ejemplos</a></li>
+         <li><a href="opciones_de_actualizacin_y_eliminacin_sobre_claves_ajenas.html" class="no-ch">Opciones de actualización y eliminación sobre claves ajenas.</a></li>
+      </ul>
+      </li>
+      <li><a href="fase_3_normalizacin.html" class="no-ch">Fase 3. Normalización</a></li>
+      <li class="current-page-parent"><a href="fase_4_diseo_fsico.html" class="current-page-parent daddy">Fase 4. Diseño Físico</a>
+      <ul>
+         <li><a href="introduccin0.html" class="no-ch">Introducción</a></li>
+         <li><a href="sql.html" class="no-ch">SQL</a></li>
+         <li><a href="el_lenguaje_ddl_del_sql.html" class="no-ch">El lenguaje DDL del SQL</a></li>
+         <li><a href="tipos_de_datos.html" class="no-ch">Tipos de Datos</a></li>
+         <li><a href="manipulacin_de_esquemasbbdd.html" class="no-ch">Manipulación de Esquemas(BBDD)</a></li>
+         <li><a href="manipulacin_de_tablas.html" class="no-ch">Manipulación de Tablas</a></li>
+         <li><a href="restricciones_de_integridad.html" class="no-ch">Restricciones de Integridad</a></li>
+         <li id="active"><a href="vistas.html" class="active no-ch">Vistas</a></li>
+         <li><a href="ndices.html" class="no-ch">Índices</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="restricciones_de_integridad.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="ndices.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Vistas</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id29">
+<div class="iDevice emphasis0" >
+<div id="ta29_114_2" class="block iDevice_content">
+<div class="exe-text"><p>Las vistas constituyen un objeto fundamental de cualquier sistema de bases de datos y representan un elemento básico en los sistemas gestores de bases de datos basados en el modelo de arquitectura ‘ANSI/X3/SPARC’ de tres niveles, ya que se corresponden con las herramientas mediante las que el usuario externo (usuario normal, no sofisticado o no especializado) interactúa con la base de datos.</p>
+<p>Las vistas se crean mediante la orden ‘CREATE VIEW’, cuya sintaxis se muestra a continuación:</p>
+<p><img src="img0.22.png" width="1119" height="152" alt="vistas1" /></p>
+<p></p>
+<p>La orden ‘CREATE VIEW’ crea una vista nueva o reemplaza una existente si se incluye la cláusula ‘OR REPLACE’.</p>
+<p>La ‘sentencia_select’ es una expresión de consulta de selección que proporciona la definición de la vista.</p>
+<p>Puede estar dirigida a tablas de la base o a otras vistas, es decir, <strong>una vista puede construirse a partir de tablas y a partir de vistas</strong>, lo que ofrece una potencia enorme a la hora de conseguir resultados.</p>
+<p>Se requiere que el usuario posea el permiso ‘CREATE VIEW’ para poder definir vistas, y algún privilegio en cada columna seleccionada por la sentencia ‘SELECT’.</p>
+<p>Para columnas incluidas en otra parte de la sentencia ‘SELECT’ el usuario debe poseer el privilegio ‘SELECT’. Si está presente la cláusula ‘OR REPLACE’, el usuario también deberá tener el privilegio ‘DELETE’ para la vista.</p>
+<p>Toda vista pertenece a una base de datos. Por defecto, las vistas se crean en la base de datos actual, pero si se quiere crear una vista en una base de datos específica, se puede hacer indicando el nombre de la base de datos antes del nombre de la vista de la forma ‘base_de_datos.nombre_vista’, en el momento de crearla.</p>
+<p>La siguiente imagen muestra la creación de una vista a partir de una consulta sencilla sobre una tabla:</p>
+<p><img src="img1.17.png" width="778" height="800" alt="vistas2" /></p>
+<p>En la imagen anterior puede observarse que en todas las órdenes se ha añadido el nombre de la base de datos antes del nombre de la tabla, lo que permite que todas las operaciones puedan ejecutarse desde cualquier base de datos.</p>
+<p>Obsérvese que la vista creada es prácticamente igual que la tabla,<strong> la única diferencia es que la vista no tiene clave primaria.</strong></p>
+<p>El sistema trata igual a las tablas y a las consultas y ambas aparecerían en la lista que muestra el comando ‘SHOW TABLES’. De hecho, la vista que se ha creado en la imagen anterior no puede llamarse igual que la tabla empleada en la construcción de la misma, porque el sistema confundiría tabla y vista de la tabla (esto se debe a que las tablas y las vistas comparten el mismo espacio de nombres en la base de datos).</p>
+<p>Las columnas devueltas por la sentencia ‘SELECT’ que se emplean en la construcción de las vistas pueden ser simples referencias a columnas de la tabla, pero también pueden ser expresiones conteniendo funciones, constantes, operadores, etc.</p>
+<p>En la siguiente imagen se muestra la creación de una vista a partir de una consulta de selección que realiza el producto cartesiano de dos tablas y donde además se utilizan pseudónimos (alias) con los que se renombran los atributos de la consulta:</p>
+<p><img src="img2.18.png" width="1119" height="739" alt="vistas3" /></p>
+<p>La nueva vista creada en la imagen anterior tendrá como nombres de atributos los que se han especificado en forma de alias en la consulta y que además se ha empleado el operador ‘ORDER BY’.</p>
+<p>En el ejemplo anterior puede observarse que la vista se puede emplear como un resumen de una consulta más compleja y <strong>puede ser utilizada como parte de otra consulta incluyéndose en la cláusula ‘FROM’.</strong></p>
+<p><strong>Debemos tener muy en cuenta que el contenido de una vista funciona como una consulta en tiempo real, es decir, si realizamos una nueva inserción, eliminación o actualización en la tabla original (de la cual deriva la vista) obtendremos que la tabla original se modifica y también lo hará el contenido de la vista que apunta hacia ella.</strong></p>
+<p>Las vistas pueden ser entendidas como una forma de guardar las consultas, en especial las consultas complejas. Si el usuario externo de la base de datos únicamente tiene permisos de ‘SELECT’ sobre esas vistas, el administrador de base de datos o el programador de aplicaciones puede programar una serie de vistas que constituirán los únicos objetos con los que el usuario podrá interactuar creando así un mecanismo de seguridad para ese usuario.</p>
+<p>El diseño de las vistas se puede modificar mediante la orden ‘ALTER VIEW’ (disponible a partir de MySQL 5.0.1) y el usuario necesita poseer los permisos ‘CREATE VIEW’ y ‘DELETE’ para la vista, y algún privilegio en cada columna seleccionada por la sentencia ‘SELECT’. La sintaxis de ‘ALTER TABLE’ se muestra a continuación:</p>
+<p><img src="img3.8.png" width="1119" height="146" alt="vistas4" /></p>
+<p></p>
+<p>La orden para borrar vistas es ‘DROP VIEW’ (también introducida a partir de la versión MySQL 5.0.1) que elimina una o más vistas de la base de datos. El usuario debe poseer el privilegio ‘DROP’ en cada vista a eliminar. La cláusula ‘IF EXISTS’ se emplea para evitar que ocurra un error por intentar eliminar una vista inexistente. La sintaxis de ‘DROP VIEW’ se muestra a continuación:</p>
+<p><img src="img4.6.png" width="1119" height="117" alt="vistas5" /></p>
+<p>Mediante el comando <strong>‘SHOW CREATE VIEW’</strong> (introducido en la versión MySQL 5.0.1) puede verse el diseño utilizado en la construcción de una vista. Además, en la base de datos de sistema ‘INFORMATION_SCHEMA’ existe una tabla denominada ‘VIEWS’ de la cual puede obtenerse información sobre los objetos de las vistas.</p>
+<p>En la siguiente imagen puede verse un ejemplo de consulta que muestra información sobre las vistas que hay en un sistema:</p>
+<p><img src="img5.6.png" width="1119" height="275" alt="vistas6" /></p>
+<p></p></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="restricciones_de_integridad.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="ndices.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<script type="text/javascript" src="_intef_js.js"></script></body></html>

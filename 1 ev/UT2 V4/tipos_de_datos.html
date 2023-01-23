@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Tipos de Datos | Apuntes_UT2_V1 </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.7 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-30"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Apuntes_UT2_V1</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Portada</a></li>
+   <li class="current-page-parent"><a href="ut_2_diseo_de_bases_de_datos.html" class="current-page-parent daddy">UT 2. Diseño de Bases de Datos</a>
+   <ul>
+      <li><a href="introduccin.html" class="no-ch">Introducción</a></li>
+      <li><a href="fase_1_diseo_conceptual_modelo_entidad_relacin.html" class="daddy">Fase 1. Diseño Conceptual. Modelo Entidad Relación</a>
+      <ul class="other-section">
+         <li><a href="modelo_entidad_relacin_er.html" class="daddy">Modelo Entidad Relación (E/R)</a>
+         <ul class="other-section">
+            <li><a href="entidades.html" class="daddy">Entidades</a>
+            <ul class="other-section">
+               <li><a href="tipos_de_entidades.html" class="no-ch">Tipos de entidades</a></li>
+            </ul>
+            </li>
+            <li><a href="atributos.html" class="daddy">Atributos</a>
+            <ul class="other-section">
+               <li><a href="tipos_de_atributos.html" class="no-ch">Tipos de atributos</a></li>
+            </ul>
+            </li>
+            <li><a href="relaciones.html" class="daddy">Relaciones</a>
+            <ul class="other-section">
+               <li><a href="papel_o_rol.html" class="no-ch">Papel o Rol</a></li>
+               <li><a href="cardinalidad.html" class="no-ch">Cardinalidad</a></li>
+               <li><a href="participacin.html" class="no-ch">Participación</a></li>
+               <li><a href="atributos_propios.html" class="no-ch">Atributos propios</a></li>
+               <li><a href="relaciones_de_dependencia_entidades_fuertes_y_entidades_dbiles.html" class="no-ch">Relaciones de dependencia: Entidades Fuertes y Entidades Débiles</a></li>
+            </ul>
+            </li>
+         </ul>
+         </li>
+         <li><a href="modelo_er_extendido.html" class="daddy">Modelo ER Extendido</a>
+         <ul class="other-section">
+            <li><a href="tipos_de_jerarqua.html" class="no-ch">Tipos de jerarquía</a></li>
+         </ul>
+         </li>
+         <li><a href="ejemplos.html" class="daddy">Ejemplos</a>
+         <ul class="other-section">
+            <li><a href="ejemplo_1.html" class="no-ch">Ejemplo 1</a></li>
+            <li><a href="ejemplo_2.html" class="no-ch">Ejemplo 2</a></li>
+         </ul>
+         </li>
+      </ul>
+      </li>
+      <li><a href="fase_2_diseo_relacional.html" class="daddy">Fase 2. Diseño Relacional</a>
+      <ul class="other-section">
+         <li><a href="ejemplos0.html" class="no-ch">Ejemplos</a></li>
+         <li><a href="opciones_de_actualizacin_y_eliminacin_sobre_claves_ajenas.html" class="no-ch">Opciones de actualización y eliminación sobre claves ajenas.</a></li>
+      </ul>
+      </li>
+      <li><a href="fase_3_normalizacin.html" class="no-ch">Fase 3. Normalización</a></li>
+      <li class="current-page-parent"><a href="fase_4_diseo_fsico.html" class="current-page-parent daddy">Fase 4. Diseño Físico</a>
+      <ul>
+         <li><a href="introduccin0.html" class="no-ch">Introducción</a></li>
+         <li><a href="sql.html" class="no-ch">SQL</a></li>
+         <li><a href="el_lenguaje_ddl_del_sql.html" class="no-ch">El lenguaje DDL del SQL</a></li>
+         <li id="active"><a href="tipos_de_datos.html" class="active no-ch">Tipos de Datos</a></li>
+         <li><a href="manipulacin_de_esquemasbbdd.html" class="no-ch">Manipulación de Esquemas(BBDD)</a></li>
+         <li><a href="manipulacin_de_tablas.html" class="no-ch">Manipulación de Tablas</a></li>
+         <li><a href="restricciones_de_integridad.html" class="no-ch">Restricciones de Integridad</a></li>
+         <li><a href="vistas.html" class="no-ch">Vistas</a></li>
+         <li><a href="ndices.html" class="no-ch">Índices</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="el_lenguaje_ddl_del_sql.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="manipulacin_de_esquemasbbdd.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Tipos de Datos</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id25">
+<div class="iDevice emphasis0" >
+<div id="ta25_119_2" class="block iDevice_content">
+<div class="exe-text"><p>Antes de estudiar cómo se realiza la definición de esquemas de relación (tablas), vamos a estudiar primero en profundidad los tipos de dominio (tipos columna como los denomina MySQL), para que seamos capaces de realizar una correcta especificación de los atributos que componen la tabla.</p>
+<p>Un aspecto a tener en cuenta a la hora de elegir los dominios de los atributos, es el espacio de almacenamiento que ocupan y la capacidad de representación.</p>
+<p><img src="img0.18.png" width="640" height="480" alt="enteros" /></p>
+<p>Comenzaremos estudiando los dominios numéricos. Para todos ellos (‘TINYINT’, ‘SMALLINT’, ‘MEDIUMINT’, ‘INT’, ‘INTEGER’, ‘BIGINT’, ‘REAL’, ‘DOUBLE’, ‘FLOAT’, ‘DECIMAL’ y ‘NUMERIC’), es posible especificar la longitud de muestra mediante el parámetro opcional ’length’, que explicaremos con más detalle más adelante.</p>
+<p>Además los dominios numéricos permiten que se especifique si se tendrá en cuenta o no el signo, mediante el parámetro opcional ‘UNSIGNED’.</p>
+<p>El parámetro ‘ZEROFILL’ indica que a la hora de mostrar los valores de los atributos, en vez de alinear utilizando espacios, que se utilicen ceros.</p>
+<p><strong>Sin duda, los tipos numéricos enteros (números enteros) son los más idóneos a la hora de definir los atributos que serán claves (primaria o alternativa), ya que agilizarán la búsqueda dentro de la tabla a partir de estos atributos.</strong> En concreto un atributo clave primaria definido sobre un dominio ‘INT’, permitiría una búsqueda razonadamente rápida . El rango con signo es [-2147483648 a 2147483647]; mientras que el rango sin signo es [0 a 4294967295].</p>
+<p></p>
+<p><img src="img1.13.png" width="977" height="668" alt="zerofill" /></p>
+<p></p>
+<p><img src="img2.14.png" width="936" height="495" alt="flotantes" /></p>
+<p></p>
+<p><img src="img3.4.png" width="910" height="470" alt="precision" /></p>
+<p></p>
+<p><img src="img4.3.png" width="963" height="382" alt="exactos" /></p>
+<p><img src="img5.2.png" width="885" height="348" alt="dos" /></p>
+<p></p>
+<p><img src="img6.2.png" width="870" height="385" alt="fechas" /></p>
+<p></p>
+<p><img src="img7.1.png" width="717" height="341" alt="caracteres" /></p>
+<p></p>
+<p><img src="img8.1.png" width="927" height="289" alt="enum y set" /></p>
+<p>Una posibilidad interesante de SQL es la creación de dominios mediante la orden ‘CREATE DOMAIN’.</p>
+<p><img src="img9.1.png" width="900" height="115" alt="dominios" /></p>
+<p>Mediante la creación de dominios, podemos personalizar el conjunto de valores que contendrán los atributos de las tablas. MySQL no permite crear nuevos dominios de atributos.</p>
+<p>Hasta la versión 8 de MySQL no se implementaban las restricciones de tipo<strong> ‘CHECK’</strong> en la instrucción<strong> ‘CREATE TABLE’</strong>, aunque sí permitía utilizar la cláusula ‘CHECK’ en la definición de la tabla, como vemos en el siguiente código de ejemplo:</p>
+<p><img src="img10.1.png" width="926" height="190" alt="dominios2" /></p>
+<p>Lo que ocurre es que el motor de bases de datos no genera errores a la hora de evaluar la consulta, ya que reconoce las sentencias ‘CHECK’ como código SQL válido. Sería algo similar a especificar una clave ajena (restricción ‘FOREIGN KEY’) en una tabla “MyISAM”, el motor de bases de datos no genera un error de sintaxis, pero tampoco implementa la integridad referencial. La creación de la tabla se realiza con éxito, como se aprecia en la imagen siguiente:</p>
+<p><img src="img11.1.png" width="1011" height="307" alt="check" /></p>
+<p>Como vemos a continuación, MySQL a pesar de que se hay permitido la creación de la tabla con las restricciones de CHECK sobre el valor de los atributos, a la hora de hacer las inserciones de datos no tiene en cuenta la cláusula CHECK y se permite ingresar un número de teléfono fuera del rango:</p>
+<p><img src="img12.1.png" width="995" height="549" alt="fuera de rango" /></p>
+<p>En la actualidad esto ya no es un problema pues tanto MySQL como su fork MariaDB permiten usar la cláusula check sin problemas desde la versión 8.</p>
+<p>No obstante, <strong>podemos conseguir acciones similares al uso de check mediante el tipo ‘SET’ y mediante el tipo ‘ENUM’,</strong> <br />como vemos en los siguientes subapartados.</p>
+<p></p>
+<p><span style="font-size: 14pt;"><strong>TIPO SET ___________________________________________________________________________________________</strong></span></p>
+<p>El tipo ‘SET’ se trata de un objeto de cadenas de caracteres que tiene cero, uno o más valores, cada uno de los cuales debe<br />elegirse de una lista de valores posibles especificada cuando se crea la tabla. Los valores de columnas ‘SET’ que consisten de <br />múltiples miembros del conjunto se especifican con los miembros separados por comas (',').</p>
+<p>A continuación se muestra un ejemplo de uso del tipo ‘SET’ en la creación de una tabla:</p>
+<p><img src="img13.1.png" width="898" height="178" alt="TIPO SET" /></p>
+<p>A la hora de insertar datos, si el valor introducido en el atributo ‘ciudad’ se encuentra dentro de los miembros definidos, lo <br />insertará correctamente; en caso contrario, el valor introducido se ignorará y se insertará una cadena de 0 caracteres (diferente <br />a NULL). Otra posibilidad del tipo ‘SET’ es que permite insertar más de un valor. En la siguiente imagen se muestran todas las <br />posibilidades:</p>
+<p><img src="img14.1.png" width="888" height="412" alt="ejemplos set" /></p>
+<p>Como puede observarse, este tipo especial, permite implementar de forma efectiva que un atributo únicamente pueda ser <br />almacenado empleando valores que hayamos decidido definir de manera personalizada. Una forma de comprobar aquellos <br />registros que han sido almacenados con otro valor diferente podría ser mediante el operador ‘LIKE’ o mediante el operador <br />‘NOT IN’, tal y como se muestra en la imagen siguiente:</p>
+<p><img src="img15.1.png" width="887" height="325" alt="operador like" /></p>
+<p></p>
+<p><span style="font-size: 14pt;"><strong>TIPO ENUM _________________________________________________________________________________________</strong></span></p>
+<p>El tipo ‘ENUM’ es un objeto de cadenas de caracteres con un valor elegido de una lista de valores permitidos que se enumeran <br />explícitamente en la especificación de columna en tiempo de creación de la tabla. A diferencia del tipo ‘SET’, un atributo ‘ENUM’ <br />solamente contiene un valor y se puede definir la lista de hasta 65535 valores distintos.</p>
+<p>A continuación se muestra un ejemplo de uso del tipo ‘ENUM’ en la creación de una tabla:</p>
+<p><img src="img16.1.png" width="902" height="161" alt="ENUM" /></p>
+<p>En la siguiente imagen puede apreciarse el resultado de la orden ‘DESCRIBE ESTUDIANTES’, donde destaca el tipo ENUM <br />empleado en el atributo ‘gradosuperior’:</p>
+<p><img src="img17.1.png" width="885" height="262" alt="enum2" /></p>
+<p>En caso de que en la creación de la tabla se haya permitido ‘NULL’ (como es el caso de arriba), este será el valor por defecto; en caso contrario, y si no se ha definido un valor por defecto mediante la cláusula ‘DEFAULT’, será el primer valor de la lista. En el caso en que se introduzca un valor diferente, el motor de evaluación de consultas de MySQL avisará con un ‘warning’ e insertará la cadena de 0 caracteres (diferente a ‘NULL’). Estas posibilidades se muestran en la siguiente imagen:</p>
+<p><img src="img18.png" width="659" height="585" alt="enum3" /></p>
+<p></p>
+<p></p>
+<p><img src="img19.png" width="997" height="546" alt="fuera de rango" /></p>
+<p>          <img src="img20.png" width="894" height="1215" alt="fuera de rango2" /></p>
+<p><img src="img21.png" width="985" height="655" alt="variable de sesion" /></p>
+<p></p>
+<p></p></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="el_lenguaje_ddl_del_sql.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="manipulacin_de_esquemasbbdd.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<script type="text/javascript" src="_intef_js.js"></script></body></html>
